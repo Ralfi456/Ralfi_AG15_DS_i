@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio Pessoal</title>
+    <!-- Bootstrap 5 CDN CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio Pessoal</title>
+    
+    <!-- Bootstrap 5 CDN CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- O seu arquivo CSS personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <style>
+        /* Rolagem suave para os links do menu */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Recurso Novo: Efeito hover nos cards de projetos */
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        section {
+            padding: 80px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Menu de Navegação Funcional -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#perfil">Meu Portfólio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Seção de Perfil -->
+    <section id="perfil" class="bg-light text-center">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <!-- Substitua o link abaixo pela sua foto ou um avatar -->
+                    <img src="imagens/1794768275-IMG_STYLE.jpg" alt="Foto de Perfil" class="rounded-circle img-fluid shadow">
+                </div>
+                <div class="col-md-6 text-md-start">
+                    <h1 class="display-5 fw-bold">Olá, eu sou o Ralfi</h1>
+                    <p class="lead text-muted">Estudante de Desenvolvimento de Sistemas e entusiasta de tecnologia.</p>
+                    <p>Focado em construir soluções eficientes, estruturadas e com interfaces modernas. Busco sempre aprender novas tecnologias e aplicar boas práticas de desenvolvimento.</p>
+                    <a href="#projetos" class="btn btn-primary mt-2">Ver Projetos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Recurso Novo: Seção de Habilidades -->
+    <section id="habilidades">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Minhas Habilidades</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-5 mb-4">
+                    <label class="fw-bold mb-1">HTML5 & CSS3</label>
+                    <div class="progress" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                        <div class="progress-bar bg-success" style="width: 85%">85%</div>
+                    </div>
+
+                    <label class="fw-bold mt-3 mb-1">Bootstrap 5</label>
+                    <div class="progress" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                        <div class="progress-bar bg-info" style="width: 80%">80%</div>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-4">
+                    <label class="fw-bold mb-1">Python</label>
+                    <div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                        <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+                    </div>
+
+                    <label class="fw-bold mt-3 mb-1">Modelagem de Dados & SQL</label>
+                    <div class="progress" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                        <div class="progress-bar bg-danger" style="width: 70%">70%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Seção de Projetos -->
+    <section id="projetos" class="bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Meus Projetos</h2>
+            <div class="row">
+                <!-- Projeto 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Projeto Acadêmico 1</h5>
+                            <p class="card-text text-muted">Aplicação desenvolvida em Python para estruturação de lógica e manipulação de dados com foco em eficiência.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Ver Repositório</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projeto 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Modelagem de Banco de Dados</h5>
+                            <p class="card-text text-muted">Diagramas Entidade-Relacionamento e mapeamento relacional para estruturação de sistemas corporativos.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projeto 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Página Web Responsiva</h5>
+                            <p class="card-text text-muted">Layout estruturado com HTML, CSS e componentes Bootstrap para navegação otimizada em múltiplos dispositivos.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Ver Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Seção de Contato -->
+    <section id="contato">
+        <div class="container text-center">
+            <h2 class="mb-4 fw-bold">Contato</h2>
+            <p class="lead text-muted mb-4">Tem interesse em conversar ou conhecer mais sobre meus trabalhos? Entre em contato!</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="mailto:seu-email@exemplo.com" class="btn btn-dark btn-lg">E-mail</a>
+                <a href="https://github.com/Ralfi456/ralfi456" target="_blank" class="btn btn-outline-dark btn-lg">GitHub</a>
+                <a href="https://linkedin.com/in/ralfi-vieira" target="_blank" class="btn btn-outline-primary btn-lg">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Ralfi. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 CDN JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
